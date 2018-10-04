@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Meters</title>
+</head>
+
+<body>
+    <table id="meters">
+{% for meter in meters %}
+        <tr>
+            <td>{{meter.id}}</td>
+            <td><a href="/meters/{{meter.id}}">{{meter.label}}</a></td>
+        </tr>
+{% endfor %}
+    </table>
+</body>
+</html>
